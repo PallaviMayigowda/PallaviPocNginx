@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind : Deployment
+metadata:
+  name: pallavi-app-deployment
+  namespace: app
+spec:
+   replicas: 2
+   selector:
+     matchLabels:
+       app: pallavi-app
+   template: 
+      metadata:
+        labels:
+          app: pallavi-app
+      spec:
+        containers:
+        - name: pallavi-poc-cont
+          image: 200901485389.dkr.ecr.us-east-1.amazonaws.com/pallavi-poc-repo:1
+          ports:
+          - containerPort: 80
