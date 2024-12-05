@@ -6,7 +6,7 @@
   "containerDefinitions": [
     {
       "name": "pallavi-poc-container",
-      "image": "200901485389.dkr.ecr.us-east-1.amazonaws.com/pallavi-poc-repo:BUILD_NUMBER",
+      "image": "200901485389.dkr.ecr.us-east-1.amazonaws.com/pallavi-poc-repo:${IMAGETAG}", 
       "memory": 512,
       "cpu": 256,
       "essential": true,
