@@ -1,4 +1,4 @@
-2{
+{
   "family": "pallavi-task-def",
   "taskRoleArn": "arn:aws:iam::200901485389:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::200901485389:role/ecsTaskExecutionRole",
